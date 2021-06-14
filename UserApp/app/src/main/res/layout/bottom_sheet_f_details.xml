@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:backGroundColor="#e0e0eb"
+        app:textColor="#000"
+        android:paddingVertical="80dp"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="30dp"
+        android:id="@+id/NumberBox"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Helloooooooooooooooooooooooooooooooooooo"
+        android:textSize="20dp"
+        android:id="@+id/c1"
+        android:textAlignment="textStart"
+        android:maxWidth="160dp"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">miniProj</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string-array name="VcOrVl">
+        <item>VCanteen</item>
+        <item>VLounge</item>
+    </string-array>
+
+    <string-array name="Category">
+        <item>Break Fast</item>
+        <item>Chinese</item>
+        <item>Drinks</item>
+        <item>Indian Snacks</item>
+        <item>Lunch</item>
+    </string-array>
+
+
+</resources>

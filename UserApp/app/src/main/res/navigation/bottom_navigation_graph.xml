@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation_graph"
+    app:startDestination="@id/bottom_home_fragment">
+
+    <!--todo no Use of this anvigation view
+     todo as we are using mobile_navigation for all navigation window-->
+    <fragment
+        android:id="@+id/bottom_home_fragment"
+        android:name="com.example.canteenapp.bottom_home_frgment"
+        android:label="fragment_bottom_home_frgment"
+        tools:layout="@layout/fragment_bottom_home_frgment" />
+    <fragment
+        android:id="@+id/vcanteen_fragment"
+        android:name="com.example.canteenapp.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/search_fragment_layout" />
+    <fragment
+        android:id="@+id/cart_fragment"
+        android:name="com.example.canteenapp.Cart_fragment"
+        android:label="fragment_profile_fragment"
+        tools:layout="@layout/fragment_cart_fragment" />
+
+</navigation>

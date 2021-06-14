@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/verificationpage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Vcanteen"
+        android:textSize="100sp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/goodbees"
+        android:id="@+id/canteenText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/canteenText"
+        android:layout_marginTop="80dp"
+        android:text="@string/chase_the_flavours"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:fontFamily="@font/verminvibesv"
+        android:textColor="#ffffff"
+        android:id="@+id/tagLineText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/sign_up_button"
+        android:text="Sign Up"
+        android:transitionName="signUpTransition"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:id="@+id/signUpButton"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sign_in_button"
+            android:text="Sign In"
+            android:transitionName="signInTransition"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:id="@+id/signInButton"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

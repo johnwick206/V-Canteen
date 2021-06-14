@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:background="@mipmap/ordered_item_bg"
+    android:elevation="10dp"
+    android:layout_marginHorizontal="10dp">
+
+    <TextView
+        android:id="@+id/orderedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="10:15"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="@id/userName"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pratikborhade302"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/orderedTime"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/orderDetails"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingBottom="10dp"
+        android:layout_marginHorizontal="14dp"
+        android:text="Dahi Papdi Chat : qty1\n\nSamosa : qty2\n\nVadaPav : qty2"/>
+
+    <TextView
+        android:id="@+id/totalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:text="Total : Rs. 150"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/messageBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/totalCost"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:background="@mipmap/message_user"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bar"
+        android:id="@+id/searchBox"
+        android:layout_marginHorizontal="10dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="500dp"
+        android:background="@mipmap/empty_search_window_img"
+        android:layout_centerInParent="true"
+        android:alpha="0.5"
+        android:id="@+id/BGImg"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/BGImg"
+        android:text=" Search Food Items...!!"
+        android:fontFamily="@font/text_font"
+        android:textSize="20dp"
+        android:id="@+id/fragmentStateTextId"/>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/searchBox">
+    <!-- TODO: Update blank fragment layout -> DONE -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView_SearchItem"
+        android:layout_marginTop="20dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
